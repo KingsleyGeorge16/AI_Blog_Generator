@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <!-----Main Section--------------------------->
+    <div class="main">
+        <div class="main-2">
+
+            <!---Introduction Section---->
+            <div class="intro">
+                <h2 class="h2">Welcome To The AI Blog Generator</h2>
+                <p class="p">Generate high-quality blog articles from Youtube videos using artificial intelligence.
+                    Simply right click on the the Youtube video to copy the link and paste in the input box and let the AI create
+                     the content for you!
+                    <!-- Generate high-quality blog articles from Youtube videos using artificial intelligence.
+                    Simply click the link to the Youtube video below and let the AI create the content for you! -->
+                </p>
+            </div>
+
+            <br>
+
+            <!---Youtube Section---->
+            <div class="">
+                <h2 class="h2-i">Enter Youtube Video Link</h2>
+                <div class="">
+                    <input type="url" placeholder="Paste Youtube Link Here..." class="input" id="youtubeLink">
+                    <a href="#"><button id="generateBlogButton" class="btn2">Generate</button></a>
+                </div>
+            </div>
+
+            <!---Loading Circle Section---->
+            <div class="load" id="loading-circle">
+                
+            </div>
+
+            <!---Generated Blog Section---->
+            <section class="sec">
+                <h2 class="h2-i">Generated Blog Article</h2>
+                <div class="gen" id="blogContent">     
+
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Saved Blog{% endblock %}
+
+{% block content %}
+<body>
+            <!------Main Content Section------------------------->
+            <section>
+                <h2 class="save">Saved Blog Posts</h2>
+                <div class="">
+
+                    <a style="color: #949494;" href="{% url 'blog_details' %}">
+                        <div class="blog">
+                            <h3>Blog Post Title 1</h3>
+                            <p>This is the content of the blog post.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quia!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio!....<br>
+                                See More
+                            </p>
+                        </div>
+                    </a>
+
+                    <div class="blog">
+                        <h3>Blog Post Title 2</h3>
+                        <p>This is the content of the blog post.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quia!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio!...<br>
+                            <a style="color: #949494;" href="#">See More</a>
+                        </p>
+                    </div>
+
+                    <div class="blog">
+                        <h3>Blog Post Title 3</h3>
+                        <p>This is the content of the blog post.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quia!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio!....<br>
+                            <a style="color: #949494;" href="#">See More</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+{% endblock %}

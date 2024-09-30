@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <!-----Main Section--------------------------->
+    <div class="main1">
+        <div class="form">
+
+            <!--Login Form------>
+            <form method="POST">
+                {% csrf_token %}
+
+                {% if error_message %}
+                <div align="center" style="color: red; font-weight: 500; font-size: 15px;">                    
+                    <h2>
+                        {{ error_message }}
+                    </h2>
+                </div>
+                {% endif %}
+                
+                <h2 class="h2-2">Login</h2>
+                <div class="username">
+                    <label for="username" class="user">Username</label><br>
+                    <input class="user1" type="text" name="username" id="username" placeholder="Enter Your Username..." required="required">
+                </div>
+
+                <div class="password">
+                    <label for="password" class="pass">Password</label><br>
+                    <input class="pass1" type="password" name="password" id="password" placeholder="Enter Your Password..." required="required">
+                </div>
+
+                <a href="#"><button type="submit" class="btn3">Login</button></a>
+
+            </form>
+
+        </div>
+    </div>
+{% endblock %}

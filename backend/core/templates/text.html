@@ -1,0 +1,38 @@
+ {% if request.user.is_authenticated %}
+            <a href="#" style="text-decoration: none; color: #fff; padding-right: 10px; font-weight: 600; font-size: 20px;">Welcome {{ user.username }}</a>
+            <a href="{% url 'logout' %}"><button class="btn">Logout</button></a>
+            {% else %}
+            <a href="{% url 'signup' %}"><button class="btn">Sign Up</button></a>
+            <a href="{% url 'login' %}"><button class="btn">Login</button></a>
+            {% endif %}
+
+
+
+
+
+
+            <form method="POST">
+                <h2 class="h2-2">Sign Up</h2>
+                <div class="username">
+                    <label for="username" class="user">Username</label><br>
+                    <input class="user1" type="text" name="username" id="username" placeholder="Enter Your Username..." required="required">
+                </div>
+
+                <div class="email">
+                    <label for="email" class="email">Email</label><br>
+                    <input class="email1" type="email" name="email" id="email" placeholder="Enter Your Email..." required="required">
+                </div>
+                
+                <div class="password">
+                    <label for="password" class="pass">Password</label><br>
+                    <input class="pass1" type="password" name="password" id="password" placeholder="Enter Your Password..." required="required">
+                </div>
+
+                <div class="password1">
+                    <label for="password1" class="pass2">Confirm Password</label><br>
+                    <input class="pass3" type="password" name="password1" id="password1" placeholder="Confirm Your Password..." required="required">
+                </div>
+
+                <a href="#"><button type="submit" class="btn3">Sign Up</button></a>
+
+            </form>

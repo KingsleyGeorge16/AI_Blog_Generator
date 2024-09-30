@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} | AI Blog Generator</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link rel="icon" type="images/png" sizes="30x30" href="{% static 'img/logo.png' %}">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->
+    <!-- <style>
+        
+    </style> -->
+</head>
+<body>
+    <!-----Navbar Section--------------------------->
+    <nav class="navbar">
+        <div>
+            <a href="{% url 'index' %}" style="color: white;"><h1 class="h1">AI Blog Generator</h1></a>
+        </div>
+        <div>
+            <!-- <a href="saved-blog.html"><button class="btnn">Saved Videos</button></a> -->
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'profile' %}" style="text-decoration: none; color: #fff; padding-right: 10px; font-weight: 600; font-family: monospace; font-size: 25px;">Hey, <span>{{ user.username }}</span></a>
+            <a href="{% url 'logout' %}"><button class="btn">Logout</button></a>
+            {% else %}
+            <a href="{% url 'signup' %}"><button class="btn btn4">Sign Up</button></a>
+            <a href="{% url 'login' %}"><button class="btn">Login</button></a>
+            {% endif %}
+        </div>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="foot">
+        <hr style="width: 700px; margin-left: 370px; margin-top: 50px;">
+        <p class="foot1">Powered by <a href="#" style="color: #c80000;">Kingsley George</a></p>
+    </footer>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
