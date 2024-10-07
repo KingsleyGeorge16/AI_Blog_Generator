@@ -7,8 +7,8 @@ body{
     display: flex;
     flex-direction: column;
     background: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-family: monospace;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /*-----Navbar Section--------------------------------------*/
@@ -26,7 +26,7 @@ body{
 .h1{
     font-size: 30px;
     font-weight: 700;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     padding-left: 50px;
     padding-top: 5px;
 }
@@ -42,7 +42,7 @@ body{
     border: 2px solid white;
     transition: .5s ease;
     border-radius: 10px;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ body{
     border: 2px solid white;
     transition: .5s ease;
     border-radius: 10px;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
 }
 
@@ -110,7 +110,7 @@ body{
     padding-top: 35px;
     padding-bottom: 15px;
     color: #fff;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .p{
@@ -126,7 +126,7 @@ body{
     padding-top: 35px;
     padding-bottom: 15px;
     color: #fff;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .input{
@@ -138,7 +138,8 @@ body{
     font-size: 18px;
     color: white;
     background: #000;
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: 'Courier New', Courier, monospace;
     outline: none;
 }
 
@@ -153,7 +154,7 @@ body{
     border: 2px solid #c80000;
     transition: .5s ease;
     border-radius: 13px;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
 }
 
@@ -298,7 +299,7 @@ a{
     font-size: 21px;
     font-weight: 600;
     color: #fff;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .email{
@@ -319,7 +320,7 @@ a{
     margin-top: 5px;
     color: #cbcbcb;
     background: #000;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .user1,
@@ -335,7 +336,7 @@ a{
     margin-top: 5px;
     color: #cbcbcb;
     background: #000;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .btn3{
@@ -349,7 +350,7 @@ a{
     border: 2px solid #c80000;
     transition: .5s ease;
     border-radius: 13px;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
     margin-left: 30px;
     margin-top: 20px;

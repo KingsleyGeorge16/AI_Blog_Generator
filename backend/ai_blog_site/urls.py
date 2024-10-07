@@ -21,7 +21,7 @@ from django.conf import settings
 
 admin.site.site_header = "AI Blog Generator Admin"
 admin.site.site_title = "AI Blog Generator Admin Panel"
-admin.site.index_title = "Welcome To AI Blog Generator Admin Panel"
+admin.site.index_title = "AI Blog Generator Admin Panel"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
